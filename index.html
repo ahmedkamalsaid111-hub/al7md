@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحمد للأثاث - صناعة الأثاث الراقي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header id="header">
+    <div class="header-top">
+        <div><a href="#">📍 القاهرة - دمياط - مصر</a><a href="#">✉️ info@alhamd-furniture.com</a></div>
+        <div><a href="#">فيسبوك</a><a href="#">انستجرام</a><a href="#">واتساب</a></div>
+    </div>
+    <div class="header-main">
+        <div class="logo">
+            <div class="logo-icon">ح</div>
+            <div class="logo-text"><h1>الحمد</h1><span>للأثاث الراقي</span></div>
+        </div>
+        <div class="header-cta">
+            <span class="phone-number">📞 01XX-XXX-XXXX</span>
+            <button class="btn-gold" onclick="scrollTo('#rooms')">اكتشف غرفنا</button>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">✦ صناعة مصرية أصيلة منذ ١٩٩٥ ✦</div>
+        <h2>الحمد للأثاث</h2>
+        <h3>نصنع لك بيت أحلامك</h3>
+        <p>خبرة أكثر من ٢٥ عامًا في صناعة الأثاث المصري الفاخر. نجمع بين الأصالة والحداثة لنقدم لك أثاثًا يليق بذوقك الرفيع</p>
+        <div class="hero-buttons">
+            <button class="btn-gold" onclick="scrollTo('#rooms')">تصفح الغرف</button>
+            <button class="btn-outline" onclick="scrollTo('#cta')">تواصل معنا</button>
+        </div>
+    </div>
+</section>
+
+<div class="stats-bar">
+    <div class="stat-item"><span class="stat-number" data-target="2500">0</span><span class="stat-label">عميل سعيد</span></div>
+    <div class="stat-item"><span class="stat-number" data-target="25">0</span><span class="stat-label">سنة خبرة</span></div>
+    <div class="stat-item"><span class="stat-number" data-target="150">0</span><span class="stat-label">تصميم حصري</span></div>
+    <div class="stat-item"><span class="stat-number" data-target="100">0</span><span class="stat-label">٪ ضمان الجودة</span></div>
+</div>
+
+<section class="rooms-section" id="rooms">
+    <div class="section-header animate">
+        <h2>غرفنا المميزة</h2>
+        <div class="section-divider"></div>
+        <p>اختر من تشكيلتنا الواسعة ما يناسب ذوقك وميزانيتك</p>
+    </div>
+
+    <div class="tab-navigation">
+        <button class="tab-btn active" onclick="switchTab('bedroom')" id="tab-bedroom"><span>🛏️ غرفة النوم</span></button>
+        <button class="tab-btn" onclick="switchTab('kids')" id="tab-kids"><span>🧒 غرفة الأطفال</span></button>
+        <button class="tab-btn" onclick="switchTab('dining')" id="tab-dining"><span>🍽️ السفرة</span></button>
+        <button class="tab-btn" onclick="switchTab('salon')" id="tab-salon"><span>🛋️ الصالون</span></button>
+        <button class="tab-btn" onclick="switchTab('corner')" id="tab-corner"><span>🪑 الركنة</span></button>
+    </div>
+
+    <!-- BEDROOM -->
+    <div class="tab-content active" id="content-bedroom">
+        <div class="tab-header"><h3>غرف النوم</h3><p>تصاميم متنوعة تناسب جميع الأذواق المصرية</p></div>
+        <div class="showcase">
+            <div class="slider" id="slider-bedroom"></div>
+            <div class="controls">
+                <button class="nav-btn" onclick="prev('bedroom')">→</button>
+                <div class="dots" id="dots-bedroom"></div>
+                <button class="nav-btn" onclick="next('bedroom')">←</button>
+            </div>
+            <div class="progress-bar"><div class="progress" id="progress-bedroom"></div></div>
+        </div>
+    </div>
+
+    <!-- KIDS -->
+    <div class="tab-content" id="content-kids">
+        <div class="tab-header"><h3>غرف الأطفال</h3><p>غرف مبهجة وآمنة تنمي خيال أطفالك</p></div>
+        <div class="showcase">
+            <div class="slider" id="slider-kids"></div>
+            <div class="controls">
+                <button class="nav-btn" onclick="prev('kids')">→</button>
+                <div class="dots" id="dots-kids"></div>
+                <button class="nav-btn" onclick="next('kids')">←</button>
+            </div>
+            <div class="progress-bar"><div class="progress" id="progress-kids"></div></div>
+        </div>
+    </div>
+
+    <!-- DINING -->
+    <div class="tab-content" id="content-dining">
+        <div class="tab-header"><h3>غرف السفرة</h3><p>سفرات فاخرة لأجمل اللحظات العائلية</p></div>
+        <div class="showcase">
+            <div class="slider" id="slider-dining"></div>
+            <div class="controls">
+                <button class="nav-btn" onclick="prev('dining')">→</button>
+                <div class="dots" id="dots-dining"></div>
+                <button class="nav-btn" onclick="next('dining')">←</button>
+            </div>
+            <div class="progress-bar"><div class="progress" id="progress-dining"></div></div>
+        </div>
+    </div>
+
+    <!-- SALON -->
+    <div class="tab-content" id="content-salon">
+        <div class="tab-header"><h3>الصالون</h3><p>صالونات فاخرة تليق بضيوفك الكرام</p></div>
+        <div class="showcase">
+            <div class="slider" id="slider-salon"></div>
+            <div class="controls">
+                <button class="nav-btn" onclick="prev('salon')">→</button>
+                <div class="dots" id="dots-salon"></div>
+                <button class="nav-btn" onclick="next('salon')">←</button>
+            </div>
+            <div class="progress-bar"><div class="progress" id="progress-salon"></div></div>
+        </div>
+    </div>
+
+    <!-- CORNER -->
+    <div class="tab-content" id="content-corner">
+        <div class="tab-header"><h3>الركنة</h3><p>ركنات مريحة لأجمل الجلسات العائلية</p></div>
+        <div class="showcase">
+            <div class="slider" id="slider-corner"></div>
+            <div class="controls">
+                <button class="nav-btn" onclick="prev('corner')">→</button>
+                <div class="dots" id="dots-corner"></div>
+                <button class="nav-btn" onclick="next('corner')">←</button>
+            </div>
+            <div class="progress-bar"><div class="progress" id="progress-corner"></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="why-us">
+    <div class="section-header animate">
+        <h2>ليه تختار الحمد؟</h2>
+        <div class="section-divider"></div>
+    </div>
+    <div class="why-grid">
+        <div class="why-card animate"><div class="why-icon">🪵</div><h4>خشب طبيعي ١٠٠٪</h4><p>أجود أنواع الأخشاب مع معالجة احترافية ضد الرطوبة والحشرات</p></div>
+        <div class="why-card animate"><div class="why-icon">✋</div><h4>حرفية يدوية</h4><p>أمهر النجارين المصريين بخبرة تتجاوز ٢٠ عامًا</p></div>
+        <div class="why-card animate"><div class="why-icon">🛡️</div><h4>ضمان حقيقي</h4><p>ضمان شامل يصل ١٥ سنة مع صيانة مجانية أول ٣ سنوات</p></div>
+        <div class="why-card animate"><div class="why-icon">🚛</div><h4>توصيل وتركيب مجاني</h4><p>توصيل مجاني لجميع محافظات مصر مع فريق تركيب محترف</p></div>
+    </div>
+</section>
+
+<section class="cta-section" id="cta">
+    <h2>جاهز تفرش بيت أحلامك؟</h2>
+    <p>تواصل معنا الآن واحصل على استشارة مجانية وخصم خاص</p>
+    <div class="cta-buttons">
+        <button class="btn-whatsapp">💬 تواصل عبر واتساب</button>
+        <button class="btn-gold">📞 اتصل بنا الآن</button>
+        <button class="btn-outline">📍 زور معرضنا</button>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand"><h3>الحمد للأثاث</h3><p>منذ ١٩٩٥ نصنع أجود الأثاث المصري بأيدي مصرية ماهرة</p></div>
+        <div class="footer-col"><h4>منتجاتنا</h4><ul><li><a href="#">غرف النوم</a></li><li><a href="#">غرف الأطفال</a></li><li><a href="#">السفرة</a></li><li><a href="#">الصالون</a></li><li><a href="#">الركنة</a></li></ul></div>
+        <div class="footer-col"><h4>خدماتنا</h4><ul><li><a href="#">تصميم حسب الطلب</a></li><li><a href="#">استشارة مجانية</a></li><li><a href="#">توصيل وتركيب</a></li><li><a href="#">تقسيط بدون فوائد</a></li></ul></div>
+        <div class="footer-col"><h4>تواصل معنا</h4><ul><li><a href="#">📞 01XX-XXX-XXXX</a></li><li><a href="#">📍 القاهرة - دمياط</a></li><li><a href="#">✉️ info@alhamd.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© ٢٠٢٥ الحمد للأثاث الراقي - صنع بـ ❤️ في مصر</p></div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
