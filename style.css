@@ -24,7 +24,7 @@ header.scrolled{box-shadow:0 4px 30px rgba(201,168,76,.15)}
 .btn-whatsapp{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border:none;padding:14px 36px;border-radius:50px;font-family:'Cairo';font-weight:700;font-size:1.05rem;cursor:pointer;transition:.3s;display:flex;align-items:center;gap:10px}
 .btn-whatsapp:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(37,211,102,.4)}
 
-.hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;background:url('images/hero-bg.jpg') center/cover no-repeat}
+.hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;background:url('images/hero-bg.jpg') center top/cover no-repeat}
 .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,13,.85),rgba(13,13,13,.6) 50%,rgba(13,13,13,.9))}
 .hero-content{text-align:center;z-index:2;animation:fadeUp 1.2s ease;padding:0 20px}
 @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
@@ -103,7 +103,7 @@ header.scrolled{box-shadow:0 4px 30px rgba(201,168,76,.15)}
 .why-card h4{color:var(--gold);font-size:1.1rem;margin-bottom:8px}
 .why-card p{color:rgba(245,240,232,.55);font-size:.88rem;line-height:1.7}
 
-.cta-section{padding:90px 20px;text-align:center;position:relative;background:url('images/cta-bg.jpg') center/cover no-repeat}
+.cta-section{padding:120px 20px;text-align:center;position:relative;background:url('images/cta-bg.jpg') center 30%/cover no-repeat;min-height:500px}
 .cta-section::before{content:'';position:absolute;inset:0;background:rgba(13,13,13,.88)}
 .cta-section h2{font-family:'Amiri',serif;font-size:2.6rem;color:var(--gold);margin-bottom:12px;position:relative}
 .cta-section p{color:rgba(245,240,232,.65);font-size:1.05rem;margin-bottom:35px;position:relative}
@@ -146,4 +146,5 @@ footer{background:var(--darker);border-top:1px solid rgba(201,168,76,.15);paddin
     .slider{min-height:680px}
     .card-img{min-height:240px}
     footer{padding:40px 20px 20px}
+    .cta-section{padding:80px 15px;min-height:400px}
 }
